@@ -1,19 +1,19 @@
-import './App.css'
-import {selects} from "./components/Selects.jsx"
-
+import { useState } from "react";
+import { Selects } from "./components/Selects";
+import { SelectList } from "./components/SelectList";
 
 const App = () => {
 
   return (
-    <>
-     <h1>Aprendizaje React</h1>
-     <p>selects Aninados</p>
-     <hr />
-     {/* SelectAnidades */}
-     <select name="" id="">
-       <option value="A">A</option>
-     </select>
-    </>
+   <div>
+
+      <h1>Aprendizaje React</h1>
+      <p>Selects Anidados</p>
+      <hr />
+      <select />
+
+ 
+   </div>
   );
 };
 

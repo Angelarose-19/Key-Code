@@ -1,8 +1,8 @@
 /* Estilo general del body */
 body {
   font-family: "Arial", sans-serif;
-  background-color: #252525;
-  color: white;
+  background-color: #d64fb9;
+  color: rgb(105, 46, 216);
   margin: 0;
   padding: 0;
   display: flex;
@@ -24,14 +24,14 @@ body {
 /* Título principal */
 h1 {
   font-size: 28px;
-  color: #007bff;
+  color: #7126e9;
   margin-bottom: 10px;
 }
 
 /* Subtítulo */
 p {
   font-size: 18px;
-  color: #6c757d;
+  color: #000000;
   margin-bottom: 20px;
 }
 
@@ -81,7 +81,7 @@ select {
 
 /* Estilo al enfocar el select */
 select:focus {
-  border-color: limegreen;
+  border-color: rgb(75, 39, 143);
   outline: none;
 }
 
@@ -101,8 +101,8 @@ option {
 .spinner {
   display: block;
   margin: 0 auto;
-  border: 4px solid rgba(0, 0, 0, 0.1);
-  border-top: 4px solid #007bff;
+  border: 4px solid rgba(155, 141, 141, 0.1);
+  border-top: 4px solid #832c5c;
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -117,4 +117,47 @@ option {
   100% {
     transform: rotate(360deg);
   }
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #373b97aa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
 }
