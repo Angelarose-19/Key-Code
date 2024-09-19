@@ -1,0 +1,7 @@
+[submodule "Ejercicios/Grupo_C"]
+    path = Ejercicios/Grupo_C
+    url = https://github.com/KatheEsparragoza/KeyCode_Grupo_C.git
+    
+[submodule "subgrupo_C"]
+	path = subgrupo_C
+	url = https://github.com/KatheEsparragoza/KeyCode_Grupo_C.git
